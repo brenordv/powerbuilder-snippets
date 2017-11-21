@@ -1,0 +1,34 @@
+$PBExportHeader$f_col_exist.srf
+global type f_col_exist from function_object
+end type
+
+forward prototypes
+global function boolean f_col_exist (readonly datawindow adw, readonly string as_colname)
+end prototypes
+
+global function boolean f_col_exist (readonly datawindow adw, readonly string as_colname);/***************************************************************
+f_col_exist
+
+Checks if a column  exists in a DataWindow.
+***************************************************************
+Arguments:
+[readonly/DataWindow] adw: Datawindow to search
+[readonly/string] as_colname: Name of the column to search
+
+Returns: boolean
+true: Column found
+false: Column not found
+***************************************************************/
+string ls_test
+
+
+//Check the column.id property.
+// Describe returns the number of the column if the column exists.
+// Describe returns an exclamation point (!) if the column doesn't exist.
+ 
+//Verifica se a coluna existe...
+ls_test = adw.Describe(as_colname+'.id')
+return ls_test <> "!"
+
+end function
+
