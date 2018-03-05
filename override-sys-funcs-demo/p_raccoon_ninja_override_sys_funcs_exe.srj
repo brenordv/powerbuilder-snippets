@@ -1,0 +1,15 @@
+$PBExportHeader$p_raccoon_ninja_override_sys_funcs_exe.srj
+$PBExportComments$Generated Application Executable Project
+EXE:C:\dev\TFS\Repos\powerbuilder-snippets\override-sys-funcs-demo\raccoon_ninja_override_sys_funcs_demo.exe,,0,1,1
+CMP:0,0,0,2,0,0
+COM:Raccoon Ninja
+DES:Demo of how to override the default MessageBox.
+CPY:Breno RdV @ Raccoon Ninja
+PRD:Override System Function Demo
+PVN:1,0,0,0
+PVS:01.000
+FVN:1,0,0,0
+FVS:01.000
+PBD:C:\dev\TFS\Repos\powerbuilder-snippets\override-sys-funcs-demo\raccoon_ninja_override_sys_funcs_demo.pbl,,0
+
+ 

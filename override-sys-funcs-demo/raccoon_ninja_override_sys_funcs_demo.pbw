@@ -1,0 +1,8 @@
+Save Format v3.0(19990112)
+@begin Unchecked
+@end;
+@begin Targets
+ 0 "raccoon_ninja_override_sys_funcs_demo.pbt";
+@end;
+DefaultTarget "raccoon_ninja_override_sys_funcs_demo.pbt";
+DefaultRemoteTarget "raccoon_ninja_override_sys_funcs_demo.pbt";

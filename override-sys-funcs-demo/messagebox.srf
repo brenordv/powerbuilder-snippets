@@ -1,0 +1,21 @@
+$PBExportHeader$messagebox.srf
+$PBExportComments$Replacing system Messagebox
+global type MessageBox from function_object
+end type
+
+forward prototypes
+global function integer messagebox (readonly string as_title, readonly string as_message, readonly icon aic_icon)
+end prototypes
+
+global function integer messagebox (readonly string as_title, readonly string as_message, readonly icon aic_icon);w_new_messagebox lw_msgbox
+
+open(lw_msgbox)
+lw_msgbox.wf_set_message_parm(as_title, &
+										MID(as_message, 1, LastPos(as_message, "#") -1), &
+										MID(as_message, LastPos(as_message, "#")+1), &
+										aic_icon)
+
+
+return 1
+end function
+
